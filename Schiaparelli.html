@@ -4,99 +4,9 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="src/style.css" />
     <title>Schiaparelli</title>
   </head>
-  <style>
-    body {
-      background: linear-gradient(
-        110.3deg,
-        rgb(238, 179, 123) 8.7%,
-        rgb(216, 103, 77) 47.5%,
-        rgb(114, 43, 54) 89.1%
-      );
-      padding-top: 30px;
-      padding-bottom: 30px;
-    }
-    div {
-      background: radial-gradient(
-        343px at 46.3% 47.5%,
-        rgb(242, 242, 242) 0%,
-        rgb(241, 241, 241) 72.9%
-      );
-      padding: 30px 60px;
-      min-width: 200px;
-      max-width: 800px;
-      height: auto;
-      display: block;
-      margin: 0 auto;
-      border-radius: 30px;
-    }
-    img {
-      display: block;
-      margin: 0 auto;
-      max-width: 400px;
-      width: 100%;
-      height: auto;
-      margin-top: 30px;
-      border-radius: 14px;
-    }
-    h1 {
-      text-align: center;
-      margin-top: 60px;
-      margin-bottom: 30px;
-      font-size: 48px;
-      color: #940a37;
-    }
-    h2 {
-      text-align: center;
-      text-transform: uppercase;
-      font-size: 18px;
-      font-family: "Franklin Gothic Medium";
-      font-weight: 100;
-    }
-    p {
-      font-family: "Times New Roman", Times, serif;
-      font-size: 18px;
-      text-align: center;
-      padding-bottom: 15px;
-      padding-top: 15px;
-    }
-    button {
-      display: block;
-      margin: 0 auto;
-      margin-bottom: 20px;
-      padding: 15px 25px 15px 25px;
-      border: 1px solid #814906;
-      border-radius: 30px;
-      box-shadow: 5px 4px 3px #cac3c3;
-      background: linear-gradient(
-        110.3deg,
-        rgb(238, 179, 123) 8.7%,
-        rgb(216, 103, 77) 47.5%,
-        rgb(114, 43, 54) 89.1%
-      );
-      color: white;
-      font-size: 18px;
-      font-family: Georgia, "Times New Roman", Times, serif;
-      transition: all 200ms ease-in-out;
-    }
-    button:hover {
-      cursor: pointer;
-      background: linear-gradient(
-        115deg,
-        rgb(0, 0, 0) 5.8%,
-        rgb(178, 14, 14) 112.6%
-      );
-    }
-    .footer {
-      color: #b32c50;
-      text-align: center;
-    }
-    .link {
-      color: #940a37;
-      text-decoration: underline;
-    }
-  </style>
   <body>
     <div>
       <h1>Schiaparelli</h1>
@@ -113,8 +23,7 @@
         <a
           class="link"
           href="https://www.schiaparelli.com/en/haute-couture/haute-couture-spring-summer-2023/"
-          target="_blank"
-        >
+          target="_blank">
           Read more about Schiaparelli here
         </a>
       </p>
@@ -122,23 +31,6 @@
       <hr />
       <p class="footer"><em>Coded by Evie Jennings</em></p>
     </div>
-    <script>
-      function doYouLoveFashion() {
-        let opinion = prompt("Do you like fashion?");
-        if (opinion === "no") {
-          alert("You do not like fashion");
-        } else {
-          let name = prompt("What is your name?");
-          let email = prompt("What is your email address?");
-          alert(
-            "Hey " +
-              name +
-              "! We will keep you updated with more fashion news🤍"
-          );
-        }
-      }
-      let button = document.querySelector("button");
-      button.addEventListener("click", doYouLoveFashion);
-    </script>
+    <script src="src/java.js"></script>
   </body>
 </html>
